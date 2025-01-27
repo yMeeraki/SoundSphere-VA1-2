@@ -4,20 +4,86 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+ 
+    
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <h1>Tune Into SoundSphere</h1>
     <main>
-      <h1>Home page</h1>
+      <form action="#">
+        <!-- Name (Full name) -->
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" placeholder="Full Name">
+
+        <br>
+        <br>
+
+        <!-- Email Address (For notifications and updates) -->
+        <label for="email-input">E-mail:</label>
+        <input type="email" id="email-input" placeholder="email@provider.com">
+
+        <br>
+        <br>
+
+        <!-- Age Group (Dropdown: Teen, Adult, Senior) -->
+        <label for="age-group-input">Age Group:</label>
+        <select name="age-group-input" id="age-group-input">
+          <option value="" >Select</option>
+          <option value="Teen">Teen</option>
+          <option value="Adult">Adult</option>
+          <option value="Senior">Senior</option>
+        </select>
+
+        <!-- 
+          =======================================================================
+         -->
+
+        <!-- Favorite Music Genre (Checkboxes: Rock, Jazz, Pop, Classical.) -->
+        <h2>Favorite Music Genre:</h2>
+        <input type="checkbox" name="rock" value="Rock" id="rock">
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" name="jazz" value="Jazz" id="jazz">
+        <label for="jazz">Jazz</label>
+
+        <input type="checkbox" name="pop" value="Pop" id="pop">
+        <label for="pop">Pop</label>
+
+        <input type="checkbox" name="classical" value="Classical" id="classical">
+        <label for="classical">Classical</label>
+
+        
+        <!-- Favorite Artist/Band (Text input) -->
+        <label for="fav-artist-or-band-input">
+          <h2>
+            Favorite Artist/Band:
+          </h2>
+        </label>
+        <textarea name="fav-artist-or-band-input" id="fav-artist-or-band-input" cols="30" rows="5"></textarea>
+
+        <!-- Listening Preferences (Radio buttons: Streaming, Live Concerts.) -->
+       
+            <h2>
+              Listening Preferences:
+            </h2>
+            
+  
+        <input type="radio" name="streaming" value="Streaming" id="streaming">
+        <label for="streaming">Streaming</label>
+
+        <input type="radio" name="live-concerts" value="Live Concerts" id="live-concerts">
+        <label for="live-concerts">Live Concerts</label>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+      
+      </form>
     </main>
+
+
+    <!--  -->
+    <script type="module" src="script.js"></script>
   </body>
 </html>
