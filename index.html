@@ -9,8 +9,8 @@
   </head>
   <body>
     <h1>Tune Into SoundSphere</h1>
-    <main>
-      <form action="#">
+  
+      <form id="form-input">
         <!-- Name (Full name) -->
         <label for="name-input">Name:</label>
         <input type="text" id="name-input" placeholder="Full Name">
@@ -28,11 +28,12 @@
         <!-- Age Group (Dropdown: Teen, Adult, Senior) -->
         <label for="age-group-input">Age Group:</label>
         <select name="age-group-input" id="age-group-input">
-          <option value="" >Select</option>
+         
           <option value="Teen">Teen</option>
           <option value="Adult">Adult</option>
           <option value="Senior">Senior</option>
         </select>
+
 
         <!-- 
           =======================================================================
@@ -40,26 +41,26 @@
 
         <!-- Favorite Music Genre (Checkboxes: Rock, Jazz, Pop, Classical.) -->
         <h2>Favorite Music Genre:</h2>
-        <input type="checkbox" name="rock" value="Rock" id="rock">
+        <input type="checkbox" name="genre" value="Rock" id="rock">
         <label for="rock">Rock</label>
 
-        <input type="checkbox" name="jazz" value="Jazz" id="jazz">
+        <input type="checkbox" name="genre" value="Jazz" id="jazz">
         <label for="jazz">Jazz</label>
 
-        <input type="checkbox" name="pop" value="Pop" id="pop">
+        <input type="checkbox" name="genre" value="Pop" id="pop">
         <label for="pop">Pop</label>
 
-        <input type="checkbox" name="classical" value="Classical" id="classical">
+        <input type="checkbox" name="genre" value="Classical" id="classical">
         <label for="classical">Classical</label>
 
         
-        <!-- Favorite Artist/Band (Text input) -->
-        <label for="fav-artist-or-band-input">
+        <!-- Why you love music (Text input) -->
+        <label for="reason-input">
           <h2>
-            Favorite Artist/Band:
+            Why you love music?
           </h2>
         </label>
-        <textarea name="fav-artist-or-band-input" id="fav-artist-or-band-input" cols="30" rows="5"></textarea>
+        <textarea name="reason-input" id="reason-input" cols="30" rows="5"></textarea>
 
         <!-- Listening Preferences (Radio buttons: Streaming, Live Concerts.) -->
        
@@ -67,23 +68,28 @@
               Listening Preferences:
             </h2>
             
-  
-        <input type="radio" name="streaming" value="Streaming" id="streaming">
-        <label for="streaming">Streaming</label>
+  <label for="streaming">
+        <input type="radio" name="preferences" value="Streaming" id="streaming">
+        Streaming</label>
 
-        <input type="radio" name="live-concerts" value="Live Concerts" id="live-concerts">
-        <label for="live-concerts">Live Concerts</label>
+        <label for="live-concerts">
+        <input type="radio" name="preferences" value="Live Concerts" id="live-concerts">
+        Live Concerts</label>
 
         <br>
         <br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Tuning In">
       
       </form>
-    </main>
+
+      <section id="display-form"></section>
+
 
 
     <!--  -->
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
